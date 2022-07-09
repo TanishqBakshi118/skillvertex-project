@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{background-color: #000;}
+
+header{
+    background: white;
+    display:block;
+    min-height: 50px;
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10010;
+    font: 12px 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+    max-height: 58px;
+}
+
+header .header-main{
+    background: white;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    position: relative;
+    z-index: 11;
+    margin:0;
+    padding:0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body.nav-menu-open header{
+    max-height: 110px;
+}
+
+body header*{
+    box-sizing: content-box;
+}
+
+header ,.header-main, .header-main-child{
+    display:flex;
+    align-items: center;
+    max-width: 1360px;
+    width: 100%;
+    justify-content: space-between;
+    margin:0 40px;
+}
+
+header .header-main .header-main-child > div{flex: 1;}
+header .header-main .header-left{
+    align-items: center;
+    display: flex;
+    height:50px
+}
+
+form input{background: #f3f3f3;}
+
+header .search-field{
+    display:flex;
+    height: 20px;
+    padding: 2px;
+    position: relative;
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    border-radius: 17px;
+}
+
+header .search-field input {
+    border: none;
+    border-radius: 0;
+    outline: none;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+header .search-field input#search-btn {
+    opacity: 0.5;
+    width: 21px;
+    height: 21px;
+}
+
+header .search-field input#search-btn, header .header-main .header-right .cart-btn, header .header-main .header-right .account-btn-all .account-btn {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0px;
+}
+
+header .header-main .header-main-child .header-left form {
+    box-sizing: border-box;
+    padding: 6px 5px 7px 16px;
+    height: 34px;
+}
+
+header .header-main .header-main-child > div {
+     flex: 1; 
+}
+
+header .header-main .header-icon {
+    display: flex;
+    justify-content: center;
+}
+
+header .header-main .header-icon img.desktop {
+    display: block;
+}
+
+header .header-main .header-icon img.desktop {
+    height: 50px;
+}
+header .header-main .header-icon img {
+    height: 100%;
+}
+
+img{vertical-align: middle;}
+
+header .header-main .header-left {
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+
+header .search-field input#search-desktop {
+    width: calc(100% - 26px);
+}
+
+header .search-field input#search-btn, header .header-main .header-right .cart-btn, header .header-main .header-right .account-btn-all .account-btn {
+    background-color: transparent;
+    border: none;
+    color: #000;
+     cursor: pointer;
+    font-size: 12px;
+    padding: 0px;
+}
+header .search-field input#search-btn {
+    opacity: 0.5;
+    width: 21px;
+    height: 21px;
+}
+
+header .header-main .header-right {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+}
+
+
+header .header-main .header-main-child .header-right #myAccountButtonGuestUser {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0;
+    letter-spacing: 0.44px;
+    line-height: 24px;
+}
+
+header .header-main .header-right .account-btn-all {
+    align-items: center;
+    display: flex;
+    margin-right: 12px;
+}
+
+header .header-main .header-main-child .header-right span .buttons-divider {
+    font-size: 0;
+    margin-right: 12px;
+    line-height: 20px;
+    width: 1px;
+    background: #000;
+}
+
+header .header-main .header-main-child .header-right #myAccountButtonJoinUs {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0;
+    letter-spacing: 0.44px;
+    line-height: 24px;
+}
+
+div ul {
+    list-style-type: none;
+    margin: 50 50 50 50;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+div ul li {
+    float: left;
+  }
+  
+div ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: green;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+ table ,th {
+     border-style: solid; 
+     border: 1px 1px 1px 1px whitesmoke;
+     border-color: #C4C4C4;
+     width: 100%;}
+
+table tr button{padding: 5px ;}
+
+p {color: aquamarine;background-color:blue ;text-size-adjust: 30px;}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title='QBuyz_merchforgamers'></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+</head>
+
+<body>
+
+<header>
+    <div style="width: 100%;" class="header-main">
+        <div class="header-main-child">
+            <div class="header-left">
+                <form id="search-field-desktop" class="search-field">
+                    <input type="text" name="search" id="search-desktop" placeholder="Search">
+                    <input type="image" name="submit" src="./images/search-icon.png" id="search-btn">
+                    <div id="searh-list-desktop" class="search-list"></div>
+                </form>
+            </div>
+
+            <div class="header-icon">
+                <a href="index.html">
+                    <img class="desktop" src="./images/main-icon.jpg">
+                </a>
+            </div>
+            
+            <div class="header-right">
+                <a id="myAccountButtonGuestUser" class="account-btn-all-account-button" style="padding-right: 5px;">Sign In</a>
+                <span class="button-divider">  |  </span>
+                <a id="myAccountButtonJoinUs" class="account-btn-all-joinus-button" style="padding-left: 5px;">Join Us</a>
+            </div>
+        
+        </div></div>
+    <br>
+
+    
+</header>
+<br><br><br>
+<div class="header-secondary" style="padding-bottom: 10px;">
+ 
+    <ul>
+        <li><a href="#home">Home</a></li>
+
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Gaming Gear</a>
+            <div class="dropdown-content">
+              <a href="javascript:void(0)">Gamepads</a>
+              <a href="javascript:void(0)">Headsets</a>
+            </div>
+          
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Streaming Gear</a>
+          <div class="dropdown-content">
+            <a href="javascript:void(0)">Stream Deck</a>
+            <a href="javascript:void(0)">Cameras</a>
+          </div>
+        </li>
+
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">PC Components</a>
+            <div class="dropdown-content">
+              <a href="javascript:void(0)">CPU coolers</a>
+              <a href="javascript:void(0)">PSUs</a>
+              <a href="javascript:void(0)">Docks</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Support</a>
+          </li>
+
+ 
+
+      </ul>
+       </div>
+
+    <table class="product-list" style="color: antiquewhite;">
+
+      <tr>
+        <td>Image</td>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Price</td>
+        <td>Rating</td>
+        <td style="padding-left: 10px;">Buy-now</td>
+      </tr>
+      
+      <tr>
+        <td ><img src="./images/xbox-controller.PNG" width="90px" height="70px" style="padding-bottom: 6px;"> </td>
+        <td>Xbox Controller</td>
+        <td>Controller for Xbox Series X/S </td>
+        <td>&#x20b9 4,999</td>
+        <td>4.0</td>
+        <td>
+          <button type="button" class="controller-add">Add</button>
+        </td>
+        <td>
+          <button type="button" class="controller-rem">Remove</button>
+        </td>
+        
+      </tr>
+
+      <tr id="headset">
+        <td ><img src="./images/razer-headset.PNG" width="90px" height="70px" style="padding-bottom: 6px;"> </td>
+        <td>Razer X Kraken Headset</td>
+        <td>Wired gaming headset for PC,consoles and Switch</td>
+        <td>&#x20b9 3,499</td>
+        <td>4.5</td>
+        <td>
+          <button type="button" class="headset-add">Add</button>
+        </td>
+        <td>
+          <button type="button" class="headset-rem">Remove</button>
+        </td>
+      </tr>
+
+      <tr id="display">
+        <td ><img src="./images/gaming-monitor.PNG" width="90px" height="70px" style="padding-bottom: 6px;"> </td>
+        <td>Gigabyte G27Q Gaming Monitor</td>
+        <td>27" 144Hz Gaming Monitor with Anti-glare display</td>
+        <td>&#x20b9 29,504</td>
+        <td>4.1</td>
+        <td>
+          <button type="button" class="display-add">Add</button>
+        </td>
+        <td>
+          <button type="button" class="display-rem">Remove</button>
+        </td>
+      </tr>
+
+      <tr id="streaming">
+        <td ><img src="./images/video-capture.PNG" width="90px" height="70px" style="padding-bottom: 6px;"> </td>
+        <td>Game streaming,recording device</td>
+        <td>Etzin 4K Audio Video Capture Card,full 1080p HD supported</td>
+        <td>&#x20b9 9,499</td>
+        <td>4.2</td>
+        <td>
+          <button type="button" class="streaming-add">Add</button>
+        </td>
+        <td>
+          <button type="button" class="streaming-rem">Remove</button>
+        </td>
+      </tr>
+
+      <tr id="rgb-fan">
+        <td ><img src="./images/rgb-fan.PNG" width="90px" height="70px" style="padding-bottom: 6px;"> </td>
+        <td>Cooler Master fan</td>
+        <td>Direct Heatpipe Air Cooler with 92mm RGB Fan</td>
+        <td>&#x20b9 1,999</td>
+        <td>4.6</td>
+        <td>
+          <button type="button" class="rgb-add">Add</button>
+        </td>
+        <td>
+          <button type="button" class="rgb-rem">Remove</button>
+        </td>
+      </tr>
+
+    </table>
+<br>
+  <button type="button" style="padding: 10px; background-color: azure;" class="display-log" onclick="returnlist(),returnprice()">Checkout</button>
+<p>You're buying:-</p>
+  <p style="text-size-adjust: 30px;" id="items">empty cart</p>
+<br>
+<p>Amounts to :</p>
+<p id="amount" style="text-size-adjust: 30px;">zero</p>
+<br>
+
+<button type="button" style="padding: 10px 20px ; background-color: azure;" class="confirmit" onclick="saythanks()" >Confirm </button>
+
+  <script src="index.js">
+  </script>
+</body>
+
+</html>
